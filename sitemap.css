@@ -1,0 +1,101 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .top-bar {
+            background: #002147;
+            color: white;
+            text-align: right;
+            padding: 5px 15px;
+            font-size: 14px;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .logo-section {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #004080, #0080c0);
+            padding: 15px;
+            color: white;
+        }
+        .logo-section img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .gov-text {
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: auto;
+        }
+        nav {
+            background: #001a33;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .login {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        footer {
+            background: #001a33;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-menu {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding-bottom: 20px;
+        }
+        .footer-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-menu ul li {
+            margin: 5px 0;
+        }
+        .footer-menu ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .qr-code {
+            height: 80px;
+            margin-left: 50px;
+        }
+        .nic-info {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .bottom-bar {
+            background: #222;
+            padding: 10px;
+        }
+        .bottom-bar img {
+            height: 30px;
+            margin: 0 10px;
+        }
+        

@@ -1,0 +1,238 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #002b5c;
+    color: white;
+    font-size: 12px;
+    padding: 5px 15px;
+    text-align: left;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+nav {
+    background-color: #002b5c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo img {
+    height: 60px;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Login/Register Link */
+.login-register {
+    margin-left: auto;
+}
+
+.login-register a {
+    color: #d39cff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+
+/* Circulars Section */
+.Vikas {
+    background: linear-gradient(to right, #E2B500, #FFF8DC);
+    padding: 5px 1px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.breadcrumb {
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #555;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Table Container */
+.table-container {
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table th {
+    background-color: #0055a5;
+    color: white;
+}
+
+footer {
+    background: #001a33;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-menu ul li {
+    margin: 5px 0;
+}
+.footer-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+.qr-code {
+    height: 80px;
+    margin-left: 50px;
+}
+.nic-info {
+    text-align: center;
+    margin-top: 10px;
+}
+.bottom-bar {
+    background: #222;
+    padding: 10px;
+}
+.bottom-bar img {
+    height: 30px;
+    margin: 0 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Image */
+.background {
+    width: 10%;
+    height: 50%;
+    background: url('your-image-url.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+/* Main navigation bar */
+.navbar {
+    background-color: #002b5c; /* Semi-transparent black */
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5%;
+    z-index: 10; /* Ensures menu is above the image */
+    justify-content: space-between;
+}
+
+/* Main menu item */
+.menu {
+    position: absolute;
+    margin-right: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5%;
+   
+}
+
+/* Dropdown menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #002b5c;
+    min-width: 200px;
+    max-height: 150px;  /* Set max height for scrollability */
+    overflow-y: auto;    /* Enable vertical scrolling */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Ensure dropdown is above other elements */
+}
+
+.dropdown a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: gray;
+}
+
+/* Show dropdown on hover */
+.menu:hover .dropdown {
+    display: block;
+}

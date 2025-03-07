@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.top-bar {
+    background: #003366;
+    color: white;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.top-bar .login {
+    color: yellow;
+    text-decoration: none;
+}
+
+nav {
+    background: #002b5c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner img {
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    text-align: center;
+}
+
+.left-box, .right-box {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-box h2 {
+    color: green;
+    font-size: 24px;
+}
+
+.right-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.disclaimer {
+    background: white;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #001a33;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-menu ul li {
+    margin: 5px 0;
+}
+.footer-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+.qr-code {
+    height: 80px;
+    margin-left: 50px;
+}
+.nic-info {
+    text-align: center;
+    margin-top: 10px;
+}
+.bottom-bar {
+    background: #222;
+    padding: 10px;
+}
+.bottom-bar img {
+    height: 30px;
+    margin: 0 10px;
+}
+/* General Navigation Bar */
+.navbar {
+    background-color: #002b5c;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Main menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+}
+
+/* Dropdown Menu */
+.menu {
+    position: relative;
+}
+
+.menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown below the Help menu */
+    left: 0;
+    background-color: #002b5c;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Dropdown Links */
+.menu .dropdown a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.menu .dropdown a:hover {
+    background-color: #004080; /* Slightly lighter blue */
+}
+
+/* Show Dropdown on Hover */
+.menu:hover .dropdown {
+    display: block;
+}
+/* Moving Text */
+/* Moving Text (Seamless Marquee Effect) */
+.moving-text {
+    width: 100%;
+    background: #ffcc00; /* Yellow background */
+    color: #000; /* Black text */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+}
+
+/* Container for scrolling text */
+.moving-text .text-container {
+    display: flex;
+    gap: 20px; /* Adjust spacing */
+    animation: marquee 40s linear infinite;
+}
+
+/* Keyframes for continuous scrolling */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container h1 {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.login {
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.search-section, .summary-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.search-section h2, .summary-section h2 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+select, input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #003366;
+    color: white;
+    border-radius: 5px;
+}
+
+button.reset {
+    background-color: red;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.tabs button.active {
+    background-color: #003366;
+    color: white;
+}
+
+.summary-content {
+    padding: 20px;
+    text-align: center;
+    color: gray;
+}
+
+footer {
+    background: #001a33;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-menu ul li {
+    margin: 5px 0;
+}
+.footer-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+.qr-code {
+    height: 80px;
+    margin-left: 50px;
+}
+.nic-info {
+    text-align: center;
+    margin-top: 10px;
+}
+.bottom-bar {
+    background: #222;
+    padding: 10px;
+}
+.bottom-bar img {
+    height: 30px;
+    margin: 0 10px;
+}
+.menu {
+    position: relative;
+}
+
+.menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown below the Help menu */
+    left: 0;
+    background-color: #002b5c;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Dropdown Links */
+.menu .dropdown a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.menu .dropdown a:hover {
+    background-color: #004080; /* Slightly lighter blue */
+}
+
+/* Show Dropdown on Hover */
+.menu:hover .dropdown {
+    display: block;
+}
+/* Moving Text */
+/* Moving Text (Seamless Marquee Effect) */
+.moving-text {
+    width: 100%;
+    background: #ffcc00; /* Yellow background */
+    color: #000; /* Black text */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+}
+
+/* Container for scrolling text */
+.moving-text .text-container {
+    display: flex;
+    gap: 20px; /* Adjust spacing */
+    animation: marquee 40s linear infinite;
+}
+
+/* Keyframes for continuous scrolling */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.top-bar {
+    background: #549de6;
+    color: white;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.top-bar .login {
+    color: rgb(172, 185, 74);
+    text-decoration: none;
+}
+nav {
+    background: #002b5c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}

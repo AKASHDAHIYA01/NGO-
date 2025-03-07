@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO DARPAN - Signup Procedure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #000033;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu a {
+            margin: 0 10px;
+        }
+
+        .menu a:hover {
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        /* Dropdown Styling */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Header Banner */
+        .banner {
+            background: linear-gradient(to right, #003366, #66a3ff);
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Signup Section */
+        .signup-section {
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        .signup-title {
+            background-color: #FFD700;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .signup-content {
+            padding: 20px;
+            background-color: white;
+            margin-top: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .signup-content ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .signup-content ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .signup-content ul li::before {
+            content: "✔";
+            color: blue;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Button */
+        .login-button {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        .login-button:hover {
+            background-color: #0055aa;
+        }
+
+        /* Footer */
+        footer {
+            background: #001a33;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-menu {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding-bottom: 20px;
+        }
+        .footer-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-menu ul li {
+            margin: 5px 0;
+        }
+        .footer-menu ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .qr-code {
+            height: 80px;
+            margin-left: 50px;
+        }
+        .nic-info {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .bottom-bar {
+            background: #222;
+            padding: 10px;
+        }
+        .bottom-bar img {
+            height: 30px;
+            margin: 0 10px;
+        }
+        nav {
+    background: #002b5c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.moving-text {
+    width: 100%;
+    background: #ffcc00; /* Yellow background */
+    color: #000; /* Black text */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+}
+
+/* Container for scrolling text */
+.moving-text .text-container {
+    display: flex;
+    gap: 20px; /* Adjust spacing */
+    animation: marquee 40s linear infinite;
+}
+
+/* Keyframes for continuous scrolling */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.menu {
+    position: relative;
+}
+
+.menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown below the Help menu */
+    left: 0;
+    background-color: #002b5c;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Dropdown Links */
+.menu .dropdown a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.1s ease-in-out;
+}
+
+/* Hover Effects */
+.menu .dropdown a:hover {
+    background-color: #004080; /* Slightly lighter blue */
+}
+
+/* Show Dropdown on Hover */
+.menu:hover .dropdown {
+    display: block;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        
+        <nav>
+            <div class="logo">
+                <img src="https://ngodarpan.gov.in/assets/images/gov.png" alt="Gov Logo">
+                <img src="https://ngodarpan.gov.in/assets/images/ngo.png" alt="NGO Logo">
+                <img src="https://ngodarpan.gov.in/assets/images/Darpan-logo.png" alt="DARPAN Logo">
+            </div>
+            <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/NGO Directory.html">NGO Directory</a></li>
+                <li><a href="/Circulars.html">Circulars</a></li>
+                <li class="menu">
+                    <a href="#">Help </a>  <!-- Fixed: This will no longer repeat "Help" -->
+                    <div class="dropdown">
+                        <a href="/signup Process help.html">Signup Process</a>
+                        <a href="https://ngodarpan.gov.in/assets/ngo_doc/NGO_Darpan_How_to_Signup_Hindi.pdf">How to Signup (Hindi)</a>
+                        <a href="https://ngodarpan.gov.in/assets/ngo_doc/NGO_Darpan_How_to_Signup_English.pdf">How to Signup (English)</a>
+                    </div>
+                </li>
+                <li><a href="/Grant-In-Oortals.html">Grant-in-aid Portals</a></li>
+                <li><a href="/Blacklisted NGOs.html">Blacklisted NGOs</a></li>
+            </ul>
+        </nav>
+    
+        <div class="moving-text">
+            <div class="text-container">
+                <span>Helpdesk Contact Numbers:           Please call at 14414 or 011-23042707/23042322/23042646/23042145/23042322 between 9:30 AM to 5:30 PM on working days or email to ngo@india.gov.in for registration assistance. Please refer to Contact Us link at the bottom of page for more options to contact Darpan Team.          &nbsp; Helpdesk Contact Numbers:           Please call at 14414 or 011-23042707/23042322/23042646/23042145/23042322 between 9:30 AM to 5:30 PM on working days or email to ngo@india.gov.in for registration assistance. Please refer to Contact Us link at the bottom of page for more options to contact Darpan Team.          &nbsp; Helpdesk Contact Numbers:           Please call at 14414 or 011-23042707/23042322/23042646/23042145/23042322 between 9:30 AM to 5:30 PM on working days or email to ngo@india.gov.in for registration assistance. Please refer to Contact Us link at the bottom of page for more options to contact Darpan Team.         </span>
+            </div>
+        </div>
+        
+    </header>
+    <!-- Information Banner -->
+    <div class="banner">
+        ☎ 23042707 / 23042322 / 23042646 between 9:30 AM to 5:30 PM or email at ngo@india.gov.in
+    </div>
+
+    <!-- Signup Procedure Section -->
+    <div class="signup-section">
+        <div class="signup-title">Signup Procedure</div>
+        <div class="signup-content">
+            <p>Following are the steps in registering the entity on NGO DARPAN:</p>
+            <h3>Sign Up for New NGOs:</h3>
+            <ul>
+                <li>Provide your NGO Name</li>
+                <li>Provide Email (OTP is sent for confirmation)</li>
+                <li>Provide Mobile Number (OTP confirmation required)</li>
+                <li>Enter security code displayed on the website</li>
+                <li>Confirm OTPs</li>
+                <li>Enter NGO PAN Number</li>
+                <li>After verification, create a password</li>
+            </ul>
+            <h3>Login Procedure for Registered NGOs:</h3>
+            <ul>
+                <li>Click on Sign In link</li>
+                <li>Provide PAN Number, Mobile, or Email</li>
+                <li>Enter your password</li>
+                <li>Access the Dashboard</li>
+                <li>Forgot password? Use OTP to reset</li>
+            </ul>
+            <button class="login-button">LOGIN/REGISTER</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+      <!-- Footer -->
+      <footer>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/sitemap.html">Site Map</a></li>
+                <li><a href="/Policies.html">Privacy Policy</a></li>
+            </ul>
+           
+            <ul>
+                <li><a href="/link to us.html">Link to us</a></li>
+                <li><a href="/contect us.html">Contact Us</a></li>
+                
+            </ul>
+            <img src="https://ngodarpan.gov.in/assets/images/QRcode.jpg" alt="QR Code" class="qr-code">
+            <div class="nic-info">
+                <img src="https://ngodarpan.gov.in/assets/images/nic-logo.png" alt="NIC Logo">
+                <p>2025 All rights reserved. Content owned & maintained by NITI Aayog, Govt of India.</p>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <img src="https://ngodarpan.gov.in/assets/images/digital-india-footer.png" alt="Digital India">
+            <img src="https://ngodarpan.gov.in/assets/images/india-gov.png" alt="India Gov">
+            <img src="https://ngodarpan.gov.in/assets/images/nitiaayog_r.png" alt="NITI Aayog">
+            <p>Best viewed in Chrome 56.0 or higher, Firefox 52.0 or higher</p>
+        </div>
+    </footer>
+</body>
+</html>
